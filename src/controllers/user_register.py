@@ -3,7 +3,7 @@ from src.models.interface.user_repository import UserRepository
 
 
 class UserRegister:
-    def __init__(self, user_repository: UserRepository):
+    def __init__(self, user_repository: UserRepository) -> None:
         self.__user_repository = user_repository
         self.__password_handle = PasswordHandler()
 
